@@ -1,0 +1,6 @@
+
+aws cloudformation create-stack --template-body file://ec2_create.yml --stack-name MYCF-instance --region us-west-2 --profile hv-dxp-dev
+aws cloudformation delete-stack --stack-name MYCF-instance --region us-west-2 --profile hv-dxp-dev
+aws cloudformation list-stacks --region us-west-2 --profile hv-dxp-dev | grep StackName
+Note:- Make sure the ec2_create.yml exits in the same directory
+
