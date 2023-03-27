@@ -1,0 +1,5 @@
+apt install ruby
+gem install cfn-nag
+
+cfn_nag_scan --input-path  stack.yml
+cfn_nag_rules
