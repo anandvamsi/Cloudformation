@@ -1,0 +1,11 @@
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+
+
+
+#Notes
+#Execute command 
+#aws cloudformation create-stack --stack-name reference  --template-body file://Step1-Resources.yml --region us-west-2 --profile <profile_name>
+#This is will create a new S3 bucket with all default params with name started with "reference*
+
