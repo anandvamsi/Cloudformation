@@ -6,6 +6,29 @@ Resources:
 
 #Notes
 #Execute command 
+#Create-stack
 #aws cloudformation create-stack --stack-name reference  --template-body file://Step1-Resources.yml --region us-west-2 --profile <profile_name>
 #This is will create a new S3 bucket with all default params with name started with "reference*
 
+#Describe-stack
+#aws cloudformation describe-stacks --stack-name reference   --region us-west-2 --profile hv-itops-dev
+{
+    "Stacks": [
+        {
+            "StackId": "arn:aws:cloudformation:us-west-2:21XXXXXXXXX0182:stack/reference/676a2f30-11e1-11ee-XXXXa0f0f0249cb",
+            "StackName": "reference",
+            "CreationTime": "2023-06-23T16:17:09.646Z",
+            "RollbackConfiguration": {},
+            "StackStatus": "CREATE_COMPLETE",
+            "DisableRollback": false,
+            "NotificationARNs": [],
+            "Tags": [],
+            "EnableTerminationProtection": false,
+            "DriftInformation": {
+                "StackDriftStatus": "NOT_CHECKED"
+            }
+        }
+    ]
+}
+
+m
