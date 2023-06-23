@@ -1,0 +1,12 @@
+Parameters:
+  BucketNameParameters:
+    Type: String
+    Description: 'Enter the name of the bucket'
+
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: !Ref BucketNameParameters
+      VersioningConfiguration:
+        Status: Enabled 
